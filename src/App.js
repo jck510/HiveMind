@@ -1,6 +1,7 @@
 import CreatePost from "./components/CreatePost";
 import FeedToolbar from "./components/FeedToolbar";
 import MainHeader from "./components/MainHeader";
+import { Routes, Route } from 'react-router-dom'
 
 
 function App() {
