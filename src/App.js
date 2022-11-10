@@ -1,5 +1,5 @@
 import CreatePost from "./components/CreatePost";
-import FeedToolbar from "./components/FeedToolbar";
+import AppToolBar from "./components/AppToolbar";
 import MainHeader from "./components/MainHeader";
 import { Routes, Route } from 'react-router-dom'
 import Home from "./components/Home";
@@ -8,7 +8,13 @@ import Home from "./components/Home";
 function App() {
   return (
     <div className="App">
-      <Home />
+
+
+      {/* Routing */}
+      <Routes>
+        <Route exact path="/hive" element={<Home />}/>
+      </Routes>
+      
     </div>
   );
 }

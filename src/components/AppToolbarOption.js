@@ -2,7 +2,7 @@ import { EmojiNature, Hive, MailOutline, NotificationsOutlined, Search, Tag } fr
 import { Avatar, Badge, Icon, Tooltip } from '@mui/material'
 import React from 'react'
 
-const FeedToolbarOption = ({title, notifications , messages}) => {
+const AppToolBarOption = ({title, notifications , messages}) => {
 
   
 
@@ -22,4 +22,4 @@ const FeedToolbarOption = ({title, notifications , messages}) => {
   )
 }
 
-export default FeedToolbarOption
+export default AppToolBarOption

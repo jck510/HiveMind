@@ -1,6 +1,7 @@
-import { ArrowLeft, ChatBubbleOutline, FavoriteBorder, IosShare, Repeat, West } from '@mui/icons-material'
-import { AppBar, Avatar, Tooltip, Typography } from '@mui/material'
+import {ChatBubbleOutline, FavoriteBorder, IosShare, Repeat, West } from '@mui/icons-material'
+import { AppBar, Avatar, Button, TextField, Tooltip, Typography } from '@mui/material'
 import React from 'react'
+import Replies from './Replies'
 
 const SelectedPost = () => {
     // Posts may have an image or possible a video
@@ -34,9 +35,11 @@ const SelectedPost = () => {
         </div>
         <div className='user-post-reply-div'>
           <Avatar />
-          <input type='text' placeHolder='What would you like to reply?' />
-          <button>Reply</button>
+          <TextField variant='outlined' label='What would you like to reply?' />
+          <Button variant='contained' className='user-post-reply-button'>Reply</Button>
         </div>
+        {/* Pass in the post id as a prop in order to pull up replies from the database */}
+        <Replies />
     </div>
   )
 }
