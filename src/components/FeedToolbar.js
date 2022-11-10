@@ -1,22 +1,27 @@
-import { Badge } from '@mui/material'
+import { Hive, MailOutline, NotificationsOutlined, Search, Tag } from '@mui/icons-material'
+import { Avatar, Badge, Icon, List, ListItemIcon, MenuList, Tooltip } from '@mui/material'
 import React from 'react'
 import { useState } from 'react'
-import { FaForumbee, FaHashtag, FaHome, FaRegBell } from 'react-icons/fa'
+import FeedToolbarOption from './FeedToolbarOption'
 
-const FeedToolbar = ({notifications}) => {
+
+const FeedToolbar = ({notifications, messages}) => {
 
   // const [unOpenedNotifications, setUnopenedNotifications] = useState({notifications});
 
   return (
-    <div className='feed-toolbar-div'>
-        <FaHome className='feed-toolbar-button'/>
-        <FaHashtag className='feed-toolbar-button'/>
-        <Badge badgeContent={notifications ? notifications : 0} color='primary'>
-          <FaRegBell className='feed-toolbar-button'/>
-        </Badge>
-        
-        <FaForumbee className='feed-toolbar-button'/>
-        <image src=''/>
+    <div>
+      <h1>HiveMind</h1>
+      <List className='feed-toolbar-list'>
+
+          <FeedToolbarOption title='Hive'/>
+          <FeedToolbarOption title='Search' />
+          <FeedToolbarOption title='Notifications' notifications={notifications}/>
+          <FeedToolbarOption title='Messages' messages={messages}/>
+          <FeedToolbarOption title='Profile' />
+          <FeedToolbarOption title='Pollinate' />
+
+      </List>
     </div>
   )
 }
