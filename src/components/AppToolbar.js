@@ -10,7 +10,7 @@ const AppToolBar = ({notifications, messages}) => {
   // const [unOpenedNotifications, setUnopenedNotifications] = useState({notifications});
 
   return (
-    <div>
+    <div className='app-toolbar-div'>
       <h1>HiveMind</h1>
       <List className='feed-toolbar-list'>
 

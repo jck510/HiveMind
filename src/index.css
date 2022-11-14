@@ -12,8 +12,13 @@ code {
     monospace;
 }
 
-.home-page-div {
+.App {
   display: flex;
+}
+
+
+.app-toolbar-div {
+  position: sticky;
 }
 
 .feed-toolbar-list{
@@ -40,6 +45,10 @@ code {
   display: flex;
   align-items: center;
   
+}
+
+.home-page-div {
+  display: flex;
 }
 
 .user-post-div {

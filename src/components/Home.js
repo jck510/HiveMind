@@ -8,7 +8,6 @@ import SelectedPost from './SelectedPost'
 const Home = () => {
   return (
     <div className='home-page-div'>
-        <AppToolBar />
         <div className='home-page-content-div'>
             <AppBar position='sticky'>
                 <Typography variant='h5'>The Hive</Typography>
