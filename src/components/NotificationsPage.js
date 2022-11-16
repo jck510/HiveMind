@@ -1,11 +1,13 @@
 import { Tab, Tabs, Typography } from '@mui/material'
 import React from 'react'
+import Feed from './Feed'
+import NotificationFeed from './NotificationFeed'
 
 const NotificationsPage = () => {
   return (
     <div className='notifications-page-div'>
         <div className='notifications-page-header-div'>
-            <Typography>Notifications</Typography>
+            <Typography variant='h5'>Notifications</Typography>
 
 
             {/* <Tabs>
@@ -15,6 +17,7 @@ const NotificationsPage = () => {
             </Tabs> */}
         </div>
 
+        <NotificationFeed />
         
 
 
