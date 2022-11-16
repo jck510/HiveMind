@@ -9,9 +9,9 @@ const Home = () => {
   return (
     <div className='home-page-div'>
         <div className='home-page-content-div'>
-            <AppBar position='sticky'>
+            <div className='home-page-header-div'>
                 <Typography variant='h5'>The Hive</Typography>
-            </AppBar>
+            </div>
         
         <CreatePost />
         <Feed />

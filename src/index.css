@@ -51,6 +51,10 @@ code {
   display: flex;
 }
 
+.home-page-header-div {
+  position: sticky;
+}
+
 .user-post-div {
   width: 600px;
 }
