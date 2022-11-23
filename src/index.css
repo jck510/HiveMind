@@ -62,3 +62,7 @@ code {
 .user-post-reply-div {
   display: flex;
 }
+
+.messages-page-div {
+  display: flex;
+}
