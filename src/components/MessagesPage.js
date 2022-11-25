@@ -3,6 +3,7 @@ import { InputAdornment, TextField, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import Conversation from './Conversation'
 import MessageList from './MessageList'
+import SelectAConversation from './SelectAConversation'
 
 const MessagesPage = () => {
 
@@ -30,7 +31,7 @@ const MessagesPage = () => {
 
         <MessageList />
       </div>
-      <Conversation />
+      <SelectAConversation />
       
     </div>
   )
