@@ -31,7 +31,8 @@ const MessagesPage = () => {
 
         <MessageList />
       </div>
-      <SelectAConversation />
+      {/* <SelectAConversation /> */}
+      <Conversation />
       
     </div>
   )
