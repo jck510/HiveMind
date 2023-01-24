@@ -7,13 +7,18 @@ import ProfilePage from "./components/ProfilePage";
 import NotificationsPage from "./components/NotificationsPage";
 import SearchPage from "./components/SearchPage";
 import MessagesPage from "./components/MessagesPage";
+import Pollinate from "./components/Pollinate";
+import { useState } from "react";
 
 
 function App() {
+
+  const [isPollinateModalVisible, setIsPollinateModalVisible] = useState(false);
+
   return (
     <div className="App">
 
-      <AppToolBar />
+      <AppToolBar modalOpen={setIsPollinateModalVisible}/>
 
       {/* Routing */}
       <Routes>
@@ -22,7 +27,10 @@ function App() {
         <Route exact path="/profile/:username" element={<ProfilePage />}/>
         <Route exact path='/notifications' element={<NotificationsPage />} />
         <Route exact path="/messages" element={<MessagesPage />}/>
+        {/* <Route exact path="/pollinate" element={<Pollinate />} /> */}
       </Routes>
+
+      <Pollinate isOpen={isPollinateModalVisible} modalHandler={setIsPollinateModalVisible}/>
       
     </div>
   );

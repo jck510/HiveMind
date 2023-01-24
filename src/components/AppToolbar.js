@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import AppToolBarOption from './AppToolbarOption'
 
 
-const AppToolBar = ({notifications, messages}) => {
+const AppToolBar = ({notifications, messages, modalOpen}) => {
 
   // const [unOpenedNotifications, setUnopenedNotifications] = useState({notifications});
 
@@ -20,7 +20,8 @@ const AppToolBar = ({notifications, messages}) => {
           <div><Link to='/notifications'><AppToolBarOption title='Notifications' notifications={notifications}/></Link></div>
           <div><Link to='/messages'><AppToolBarOption title='Messages' messages={messages}/></Link></div>
           <div><Link to='/profile/jck'><AppToolBarOption title='Profile' /></Link></div>
-          <div><AppToolBarOption title='Pollinate' /></div>
+          <div onClick={() => modalOpen(true)}><AppToolBarOption title='Pollinate' /></div>
+          {/* <div><Link to='/pollinate'><AppToolBarOption title='Pollinate' /></Link></div> */}
 
       </List>
     </div>
