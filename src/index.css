@@ -66,3 +66,46 @@ code {
 .messages-page-div {
   display: flex;
 }
+
+/* Post */
+
+.post-div {
+  outline: 1px solid lightgray;
+  display: flex;
+  width: 575px;
+  padding: 10px;
+}
+
+/* .post-div:hover {
+  background-color: lightgray;
+  cursor: pointer;
+} */
+
+.post-header-div {
+  display: flex;
+}
+
+.post-display-name {
+  font-size: large;
+  margin: 7px;
+  margin-top: 0px;
+}
+
+.post-user-name {
+  font-size: large;
+  margin: 7px;
+  margin-left: 4px;
+  margin-top: 0px;
+}
+
+.post-time-stamp-separator {
+  font-size: large;
+  margin: 2px;
+  margin-top: 0px;
+}
+
+.post-time-stamp {
+  margin: 2px;
+  margin-top: 0px;
+  font-size: large;
+}
