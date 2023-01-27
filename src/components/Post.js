@@ -19,7 +19,7 @@ const Post = ({postDetails}) => {
           </div>
             
             
-            <Tooltip title='More' className='post-settings-button'><MoreHoriz /></Tooltip>
+            <Tooltip title='More' className='post-reply-tooltip'><MoreHoriz className='post-reply-icon'/></Tooltip>
         
         </div>
 
@@ -28,10 +28,10 @@ const Post = ({postDetails}) => {
         <p className='post-content'>Content</p>
 
         <div className='post-tools-div'>
-            <Tooltip title='Reply' className='post-reply-tooltip'><ChatBubbleOutline /></Tooltip>
-            <Tooltip title='Repollinate' className='post-repollinate-tooltip'><Repeat /></Tooltip>
-            <Tooltip title='Like' className='post-like-tooltip'><FavoriteBorder /></Tooltip>
-            <Tooltip title='Share' className='post-reply-tooltip'><IosShare /></Tooltip>
+            <Tooltip title='Reply' className='post-reply-tooltip'><ChatBubbleOutline className='post-reply-icon'/></Tooltip>
+            <Tooltip title='Repollinate' className='post-repollinate-tooltip'><Repeat className='post-repollinate-icon'/></Tooltip>
+            <Tooltip title='Like' className='post-like-tooltip'><FavoriteBorder className='post-like-icon'/></Tooltip>
+            <Tooltip title='Share' className='post-reply-tooltip'><IosShare className='post-reply-icon'/></Tooltip>
         </div>
 
         </div>

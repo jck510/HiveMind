@@ -182,3 +182,71 @@ code {
   width: 20px;
   height: auto;
 }
+
+.post-like-icon:hover {
+  color: red;
+}
+
+.post-repollinate-icon:hover {
+  color: green;
+}
+
+/* color grey here is for the settings button */
+.post-reply-icon {
+  color: grey;
+}
+
+.post-reply-icon:hover {
+  color: brown;
+}
+
+
+/* Create Post Section */
+
+.create-post-div {
+  display: flex;
+  outline: 1px solid lightgray;
+}
+
+.create-post-avatar {
+  margin-left: 9px;
+}
+
+.create-post-content-div {
+  margin-left: 5px;
+}
+
+.create-post-text-field {
+  width: 541px;
+  
+}
+
+.create-post-tools-div {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: brown;
+}
+
+.create-post-tools-div button {
+  background-color: gold ;
+  text-shadow: 1px 0 5px #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  text-transform: none;
+  font-size: large;
+}
+
+.create-post-tools-div button:hover {
+  background-color: goldenrod;
+}
+
+.button-inner-icon {
+  filter: 
+    drop-shadow(-1px -1px 0px #000)
+    drop-shadow(1px -1px 0px #000)
+    drop-shadow(-1px 1px 0px #000)
+    drop-shadow(1px 1px 0px #000);
+}
+
+.create-post-attachment-tooltip {
+  margin-top: 5px;
+}
