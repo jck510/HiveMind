@@ -75,6 +75,8 @@ code {
   width: 595px;
   height: 75px;
   background-color: rgba(255, 255, 255, 0.911);
+  outline: 1px solid lightgray;
+  z-index: 9; /* sends the div to the front of the page to cover other divs and components */
   
 }
 

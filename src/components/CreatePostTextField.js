@@ -12,6 +12,7 @@ const CreatePostTextField = styled(TextField)({
     '& .MuiOutlinedInput-root': {
       '& fieldset': {
         borderColor: 'white',
+        opacity: 0,
       },
       '&:hover fieldset': {
         borderColor: 'white',
