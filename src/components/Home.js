@@ -10,7 +10,7 @@ const Home = () => {
     <div className='home-page-div'>
         <div className='home-page-content-div'>
             <div className='home-page-header-div'>
-                <Typography variant='h5'>The Hive</Typography>
+                <h2 className='page-header'>The Hive</h2>
             </div>
         
         <CreatePost />

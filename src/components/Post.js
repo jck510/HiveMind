@@ -25,7 +25,7 @@ const Post = ({postDetails}) => {
 
         {/* If it is a reply then it will say it is replying to a user */}
     
-        <p className='post-content'>Content</p>
+        <p className='post-content'>Content Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint distinctio cum accusantium expedita consequatur hic, nesciunt laboriosam voluptatum iste perferendis dolorem ipsam nihil saepe laborum autem dicta natus debitis fuga.</p>
 
         <div className='post-tools-div'>
             <Tooltip title='Reply' className='post-reply-tooltip'><ChatBubbleOutline className='post-reply-icon'/></Tooltip>
