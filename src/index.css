@@ -89,10 +89,12 @@ code {
   padding: 10px;
 }
 
-/* .post-div:hover {
-  background-color: lightgray;
+
+.post-div:hover {
+  background-color: rgb(248, 247, 247);
   cursor: pointer;
-} */
+}
+
 
 .post-content-wrapper-div {
   width: inherit;
@@ -267,3 +269,20 @@ code {
   margin-top: 5px;
 }
 
+/* Profile page section */
+
+.profile-page-header-div {
+  display: flex;
+  align-items: center;
+  z-index: 9;
+  outline: 0px;
+}
+
+.profile-details-div {
+  margin-top: 76px;
+}
+
+.profile-details-profile-picture-and-button-div {
+  display: flex;
+  justify-content: space-between;
+}
