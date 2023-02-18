@@ -22,17 +22,25 @@ const ProfileDetails = () => {
         </div>
 
         </div>
-        <h3>Display Name</h3>
-        <Verified />
-        <h5>Username</h5>
-        <div>
+
+      <div className='profile-details-profile-information-div'>
+        <div className='profile-details-display-name-div'>
+          <h3 className='profile-details-display-name'>Display Name</h3>
+          <Verified />
+        </div>
+        
+        <h5 className='profile-details-username'>Username</h5>
+        <div className='profile-details-member-since-div'>
           <CalendarMonth />
           <h5>Member Since </h5>
         </div>
         
-        <h6>Followers</h6>
-        <h6>Following</h6>
+        <div className='profile-details-follower-numbers-div'>
+          <h6 className='followers-label'>Followers</h6>
+          <h6 className='followers-label'>Following</h6>
+        </div>
         
+      </div>
     </div>
   )
 }
