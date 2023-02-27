@@ -1,5 +1,5 @@
-import { CalendarMonth, KeyboardBackspace, Verified } from '@mui/icons-material'
-import { Avatar, Button, Tab, Tabs, Typography } from '@mui/material'
+import { CalendarMonth, KeyboardBackspace, MoreHoriz, Verified } from '@mui/icons-material'
+import { Avatar, Button, Tab, Tabs, Tooltip, Typography } from '@mui/material'
 import React from 'react'
 
 
@@ -15,9 +15,18 @@ const ProfileDetails = () => {
         <div className='profile-details-button-div'>
 
           {/* Will show edit profile button if the user logged in is the same as the profile that is being viewed */}
-          <button>Edit profile</button>
-          {/* Otherwise there will be a follow button */}
-          <Button variant='contained'>Follow</Button>
+          <button className='edit-profile-button'>Edit profile</button>
+          {/* Otherwise there will be a follow button and settings button */}
+          <Tooltip title='More'><MoreHoriz /></Tooltip>
+          
+          <Button variant='contained' 
+          sx={{ 
+            textTransform:'none', 
+            backgroundColor: 'black', 
+            fontWeight: 'bold',
+            borderRadius: '25px'
+            }}
+          >Follow</Button>
 
         </div>
 

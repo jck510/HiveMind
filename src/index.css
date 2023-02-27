@@ -324,3 +324,17 @@ code {
   font-size: 15px;
   margin-right: 20px;
 }
+
+.follow-button {
+  text-transform: none;
+  color: white;
+  background-color: #000;
+}
+
+.edit-profile-button {
+  color: #000;
+  background-color: white;
+  padding: 10px;
+  border-radius: 25px;
+  font-weight: bold;
+}
