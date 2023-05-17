@@ -19,14 +19,7 @@ const ProfileDetails = () => {
           {/* Otherwise there will be a follow button and settings button */}
           <Tooltip title='More'><MoreHoriz /></Tooltip>
           
-          <Button variant='contained' 
-          sx={{ 
-            textTransform:'none', 
-            backgroundColor: 'black', 
-            fontWeight: 'bold',
-            borderRadius: '25px'
-            }}
-          >Follow</Button>
+          <button className='follow-button' >Follow</button>
 
         </div>
 
@@ -39,6 +32,11 @@ const ProfileDetails = () => {
         </div>
         
         <h5 className='profile-details-username'>Username</h5>
+        <div className='profile-details-bio-div'>
+          <p className='profile-details-bio'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas illo est magni culpa et excepturi harum dignissimos? Ea assumenda earum labore porro ipsum aliquid doloribus quo beatae, eos iure?
+          </p>
+        </div>
         <div className='profile-details-member-since-div'>
           <CalendarMonth />
           <h5>Member Since </h5>
