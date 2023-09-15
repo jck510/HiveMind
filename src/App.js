@@ -14,6 +14,7 @@ import { useState } from "react";
 function App() {
 
   const [isPollinateModalVisible, setIsPollinateModalVisible] = useState(false);
+  const profile = {displayName:"John Doe", userName: "doeBoyJohn", isYourProfile:true}
 
   return (
     <div className="App">
@@ -24,7 +25,7 @@ function App() {
       <Routes>
         <Route exact path="/hive" element={<Home />}/>
         <Route exact path="/search" element={<SearchPage />}/>
-        <Route exact path="/profile/:username" element={<ProfilePage />}/>
+        <Route exact path="/profile/:username" element={<ProfilePage profileInformation={profile} />}/>
         <Route exact path='/notifications' element={<NotificationsPage />} />
         <Route exact path="/messages" element={<MessagesPage />}/>
         {/* <Route exact path="/pollinate" element={<Pollinate />} /> */}

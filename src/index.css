@@ -356,4 +356,9 @@ code {
   padding: 10px;
   border-radius: 25px;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.edit-profile-button:hover {
+  background-color: rgba(128, 128, 128, 0.192);
 }

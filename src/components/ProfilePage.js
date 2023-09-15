@@ -3,12 +3,12 @@ import React from 'react'
 import ProfileDetails from './ProfileDetails'
 import ProfileDetailsFeed from './ProfileDetailsFeed'
 
-const ProfilePage = () => {
+const ProfilePage = ({profileInformation}) => {
   return (
     <div className='profile-page-div'>
       <div className='profile-page-header-div home-page-header-div'>
           <KeyboardBackspace />
-          <h2>Display Name</h2>
+          <h2>{profileInformation.displayName}</h2>
 
       </div>
         <ProfileDetails />
