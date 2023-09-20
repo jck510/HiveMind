@@ -14,7 +14,7 @@ import { useState } from "react";
 function App() {
 
   const [isPollinateModalVisible, setIsPollinateModalVisible] = useState(false);
-  const profile = {displayName:"John Doe", userName: "doeBoyJohn", isYourProfile:true}
+  const profile = {displayName:"John Doe", userName: "doeBoyJohn", isYourProfile:true, profilePicture:'../assets/images/samplebanner.jpg'}
 
   return (
     <div className="App">

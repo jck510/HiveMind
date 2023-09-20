@@ -3,11 +3,11 @@ import { Avatar, Button, Tab, Tabs, Tooltip, Typography } from '@mui/material'
 import React from 'react'
 
 
-const ProfileDetails = () => {
+const ProfileDetails = ({profile}) => {
   return (
     <div className='profile-details-div'>
         
-        <img alt='' src='../assets/images/samplebanner.jpg' className='profile-details-banner-picture' height='200px' width='595px' />
+        <img alt='' src={profile.profilePicture ? profile.profilePicture : '../assets/images/hivemind.jpg'} className='profile-details-banner-picture' height='200px' width='595px' />
         
         <div className='profile-details-profile-picture-and-button-div'>
         <Avatar src='' className='profile-details-profile-picture' sx={{height: '140px', width: '140px' , outline: '5px solid white', marginLeft: '20px', marginTop: '-75px'}} ></Avatar>

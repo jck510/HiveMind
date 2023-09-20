@@ -11,7 +11,7 @@ const ProfilePage = ({profileInformation}) => {
           <h2>{profileInformation.displayName}</h2>
 
       </div>
-        <ProfileDetails />
+        <ProfileDetails profile={profileInformation}/>
         <ProfileDetailsFeed />
     </div>
   )
