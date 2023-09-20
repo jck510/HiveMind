@@ -7,9 +7,9 @@ const Message = ({conversationMessage}) => {
 
   console.log(conversationMessage.userID, ' had a message id of ', conversationMessage.messageID);
   return (
-    <div className='message-div'>
-        {(conversationMessage.userID === loggedInUserID) ? <h5>Blue</h5> : <h5>Grey</h5>}
-        <h6>{conversationMessage.messageText}</h6>
+    <div className='conversation-messages-div'>
+        {(conversationMessage.userID === loggedInUserID) ? <h5 className='your-own-message-bubble'>{conversationMessage.messageText}</h5> : <h5 className='another-user-message-bubble'>{conversationMessage.messageText}</h5>}
+        {/* need to add image/ attachment messages */}
     </div>
   )
 }

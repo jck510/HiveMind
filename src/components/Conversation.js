@@ -18,7 +18,7 @@ const Conversation = () => {
     <div className='conversation-div'>
       <div className='conversation-header-div'>
         <Avatar />
-        <Typography variant='h5'>Display Name</Typography>
+        <h5>Display Name</h5>
       </div>
 
     
