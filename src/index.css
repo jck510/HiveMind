@@ -365,6 +365,23 @@ code {
 
 /* Messages section */
 
+.conversation-header-div {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 700px;
+  /* outline: 1px solid lightgrey; */
+  position: fixed;
+  z-index: 9;
+  background-color: rgba(255, 255, 255, .92 );
+  backdrop-filter: blur(4px);
+  
+  
+
+}
+
+
+
 .conversation-toolbar-div {
   width: 700px;
   outline: 1px solid lightgrey;
