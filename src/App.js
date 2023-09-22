@@ -14,7 +14,21 @@ import { useState } from "react";
 function App() {
 
   const [isPollinateModalVisible, setIsPollinateModalVisible] = useState(false);
-  const profile = {displayName:"John Doe", userName: "doeBoyJohn", isYourProfile:true, profilePicture:'../assets/images/samplebanner.jpg'}
+
+  // next time will try and brainstorm the best way to have an ID check for all pages to gather information from only the user who is logged in and profile details from other users
+
+  // user profile and conversations list for testing
+  const conversationsList = [10002,10003,10004,10005,10006,10007,10008,10009,100010];
+  const userProfile = {displayName:"John Doe", userName: "doeBoyJohn", userID:1 , profilePicture:'../assets/images/samplebanner.jpg', conversations: conversationsList}
+
+  
+  // will pass these sample profiles for testing 
+  // Need to determine if userID's will be necessary or if userNames are sufficient ways to identify users
+  const sampleProfile1 = {displayName:"Joe Schmoe", userName: "yoJoeSchmoe",  profilePicture:'../assets/images/samplebanner.jpg', conversations: [10002]}
+  const sampleProfile2 = {displayName:"Ted Reddy", userName: "datGuyTed",  profilePicture:'../assets/images/samplebanner.jpg', conversations: conversationsList}
+  const sampleProfile3 = {displayName:"Joseph Hallow", userName: "jojojojo",  profilePicture:'../assets/images/samplebanner.jpg', conversations: conversationsList}
+  const sampleProfile4 = {displayName:"Mac French", userName: "french_vanilla",  profilePicture:'../assets/images/samplebanner.jpg', conversations: conversationsList}
+
 
   return (
     <div className="App">
@@ -25,9 +39,10 @@ function App() {
       <Routes>
         <Route exact path="/hive" element={<Home />}/>
         <Route exact path="/search" element={<SearchPage />}/>
-        <Route exact path="/profile/:username" element={<ProfilePage profileInformation={profile} />}/>
+        {/* for now the profile page will only return the user's profile page. need to go back in and change that. checking functionality at the moment before opening that up */}
+        <Route exact path="/profile/:username" element={<ProfilePage profileInformation={userProfile} />}/>
         <Route exact path='/notifications' element={<NotificationsPage />} />
-        <Route exact path="/messages" element={<MessagesPage />}/>
+        <Route exact path="/messages" element={<MessagesPage conversationsList={userProfile.conversations}/>}/>
         {/* <Route exact path="/pollinate" element={<Pollinate />} /> */}
       </Routes>
 

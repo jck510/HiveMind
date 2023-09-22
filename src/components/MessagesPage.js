@@ -5,7 +5,9 @@ import Conversation from './Conversation'
 import MessageList from './MessageList'
 import SelectAConversation from './SelectAConversation'
 
-const MessagesPage = () => {
+
+// conversationsList prop will contain a list of all the conversationIDs that the logged in user has
+const MessagesPage = ({conversationsList}) => {
 
   const [currentConversationSelected, setCurrentConversationSelected] = useState(null);
 

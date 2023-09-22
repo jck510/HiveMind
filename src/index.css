@@ -380,6 +380,11 @@ code {
 
 }
 
+.conversation-scroll-div {
+  margin-top: 70px;
+  height: fit-content;
+}
+
 
 
 .conversation-toolbar-div {
@@ -390,6 +395,12 @@ code {
   z-index: 9;
   background-color: white;
 }
+
+.new-message-input-box {
+  width: 100%;
+}
+
+
 
 .conversation-messages-div {
   display:flex;

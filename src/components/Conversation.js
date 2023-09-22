@@ -30,7 +30,7 @@ const Conversation = () => {
       </div>
 
       <div className='conversation-toolbar-div'>
-          <TextField placeholder='Start a new message' variant='filled' InputProps={{
+          <TextField className='new-message-input-box' placeholder='Start a new message' variant='filled' InputProps={{
             endAdornment: (
               <InputAdornment position='end'>
                 <Send />
