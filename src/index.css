@@ -444,3 +444,42 @@ code {
   /* outline: solid 2px #000; */
   /* text-shadow: 1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black; */
 }
+
+.messages-page-toolbar-div {
+  border: 1px solid lightgray;
+}
+
+.messages-page-header-div {
+  display: flex;
+}
+
+.messages-page-header-tools-div {
+  display: flex;
+}
+
+.message-list-div {
+  width: 350px;
+  
+
+}
+
+.conversation-option-div {
+  display: flex;
+  align-items: center;
+  
+}
+
+.conversation-option-div:hover {
+  background-color: rgb(241, 239, 239);
+  cursor: pointer;
+}
+
+.conversation-option-content-header-div {
+
+  margin-top: 50px;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+
+

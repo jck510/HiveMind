@@ -22,14 +22,16 @@ const MessagesPage = ({conversationsList}) => {
             <AddCircleOutline />
           </div>
 
-          <TextField variant='outlined' placeholder='Search Direct Messages' InputProps={{
+          
+        </div>
+
+        <TextField variant='outlined' placeholder='Search Direct Messages' InputProps={{
             startAdornment: (
               <InputAdornment position='start'>
                 <Search />
               </InputAdornment>
             ),
           }}/>
-        </div>
 
         <MessageList />
       </div>

@@ -1,19 +1,19 @@
 import { Avatar, Typography } from '@mui/material'
 import React from 'react'
 
-const ConversationOption = () => {
+const ConversationOption = ({sender, mostRecentMessageReceived}) => {
   return (
     <div className='conversation-option-div'>
         <Avatar />
 
         <div className='conversation-option-content-div'>
             <div className='conversation-option-content-header-div'>
-                <Typography variant='h6'>Display Name</Typography>
-                <Typography variant='subtitle1'>UserName</Typography>
-                <Typography variant='subtitle1'>TimeStamp</Typography>
+                <h4>Display Name</h4>
+                <p>UserName</p>
+                <p>TimeStamp</p>
             </div>
 
-            <Typography variant='subtitle2'>Message Preview</Typography>
+            <p>Message Preview</p>
 
         </div>
     </div>
